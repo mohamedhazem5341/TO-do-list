@@ -62,7 +62,7 @@ body {
 
 .task-name p {
     font-size: 1.3rem;
-    flex-wrap: wrap;
+    word-break: break-all;
 }
 
 .task-right {
