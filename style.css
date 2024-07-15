@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", arial;
+}
+
+body {
+    background-image: url(/img/10.jpg);
+    backdrop-filter: blur(10px);
+    height: clamp(110vh, 130vh , 150vh);
+    color: #fff;
+}
+
+.header {
+    background-image: linear-gradient(to bottom left, lightslategray, rgb(65, 71, 76));
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+    margin-bottom: 1rem;
+}
+
+.header-title h1 {
+    font-size: 2.5rem;
+}
+
+.main {
+    margin: auto;
+    width: 80%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+}
+
+.main-title {
+    text-align: center;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.tasks {
+    background-image: linear-gradient(to bottom left, rgb(147, 190, 233), rgb(60, 93, 119));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    transition: all 0.5s ease;
+}
+
+.task-name {
+    max-width: 350px;
+    text-align: center;
+}
+
+.task-name p {
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+}
+
+.task-right {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.icon-star:hover {
+    color: orange;
+}
+
+
+.icon-trash:hover {
+    color: rgb(137, 0, 0);
+}
+
+.icon-angry2 {
+    font-size: 1.5rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .2s;
+}
+
+.icon:hover {
+    opacity: 1;
+    font-size: 1.6rem;
+}
+
+.icon-heart {
+    color: red;
+}
+
+.text {
+    text-align: center;
+    width: 80%;
+    margin: 100px auto;
+}
+
+.enter {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    width: 90%;
+}
+
+.text h3 {
+    font-size: 2rem;
+    margin: .5rem .5rem 1rem .5rem;
+}
+
+@media (width <=500px) {
+
+    .tasks {
+        background-image: linear-gradient(to bottom left, rgb(147, 190, 233), rgb(60, 93, 119));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        padding: 1rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .main-title h1 {
+        margin: .4rem;
+    }
+
+    .task-name {
+        max-width: 300px;
+        text-align: center;
+        padding: .3rem;
+        margin: .3rem;
+    }
+
+    .text h3 {
+        font-size: 1.3rem;
+        margin: .5rem;
+    }
+
+    .enter {
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+        width: 90%;
+    }
+
+}
+
+.text input {
+    font-size: 1rem;
+    width: 50%;
+    max-width: 320px;
+    padding-left: .3rem;
+}
+
+.text button {
+    width: 30%;
+    max-width: 70px;
+    font-size: 1rem;
+    padding: .5rem 0rem;
+}
+
+.dn {
+    display: none;
+}
+
+.done {
+    text-decoration: line-through;
+
+}
+
+.done2 {
+    opacity: .5;
+}
+
+.star {
+    color: orange;
+    opacity: 1;
+}
+
+.disable {
+    cursor: default;
+}
+
+.fall {
+    transform: translateX(-15rem);
+    opacity: 0;
+}
